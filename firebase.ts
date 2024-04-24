@@ -17,3 +17,19 @@ const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export { db };
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDOGDfNEMAvDHlg7jwtp3v-Z8IX9yn6WrM",
+//   authDomain: "chatgpt-messenger-c5b15.firebaseapp.com",
+//   projectId: "chatgpt-messenger-c5b15",
+//   storageBucket: "chatgpt-messenger-c5b15.appspot.com",
+//   messagingSenderId: "590657455962",
+//   appId: "1:590657455962:web:e61b717c0eb22587d45563",
+//   measurementId: "G-PCYP6R3K8X",
+// };
+
+// // Initialize Firebase
+// const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+// const db = getFirestore(app);
+
+// export { db };
