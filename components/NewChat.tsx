@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 
 function NewChat() {
-  const router = useRouter();
+  const router = useRouter(); 
   const { data: session } = useSession();
 
   const createNewChat = async () => {
@@ -27,7 +27,6 @@ function NewChat() {
 
   return (
     <div
-      //   style this like the chatgpt button in tailwind css
       className="border-gray-700 border chatRow items-center justify-center"
       onClick={createNewChat}
     >
