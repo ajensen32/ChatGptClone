@@ -7,7 +7,7 @@ import {
 async function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center h-screen text-white px-2">
-      <h1 className="text-5xl font-bold mb-20">ChatGPT</h1>
+      <h1 className="text-5xl font-bold mb-20">AlexGPT</h1>
 
       <div className="flex space-x-2 text-center">
         <div className="">
@@ -31,12 +31,12 @@ async function HomePage() {
           </div>
 
           <div className="space-y-2">
-            <p className="infoText">Change the ChatGPT Model to use</p>
+            <p className="infoText">Ability to Select different chatGPT models</p>
             <p className="infoText">
-              Messages are stored in Firebase's Firestore
+              Messages are stored in Google's Firebase Firestore
             </p>
             <p className="infoText">
-              Hot Toast notifications when ChatGPT is thinking!
+              Hot Toast notifications used when the ChatGPT Prompt is loading
             </p>
           </div>
         </div>
@@ -51,10 +51,10 @@ async function HomePage() {
               May occasionally generate incorrect information
             </p>
             <p className="infoText">
-              May occasionally produce harmful instructions or biased content
+              Some models aren't as powerful as others
             </p>
             <p className="infoText">
-              Limited knowledge of world and events after 2021
+              Some responses may be better than others depending on the model used
             </p>
           </div>
         </div>

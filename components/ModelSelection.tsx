@@ -2,14 +2,15 @@
 import useSWR from "swr";
 import Select from "react-select";
 
-function fetchModels() {
-  return fetch("/api/getEngines").then((r) => r.json());
+async function fetchModels() {
+  const r = await fetch("/api/GetEngines");
+  return await r.json();
 }
 
 function ModelSelection() {
   const { data: models, isLoading } = useSWR("models", fetchModels);
   const { data: model, mutate: setModel } = useSWR("model", {
-    fallbackData: "text-davinci-003",
+    fallbackData: "gpt-3.5-turbo-instruct",
   });
 
   return (

@@ -23,7 +23,7 @@ type Props = {
 function ChatInput({ chatId }: Props) {
   const [prompt, setPrompt] = useState("");
   const { data: model } = useSWR("model", {
-    fallbackData: "text-davinci-003",
+    fallbackData: "gpt-3.5-turbo-instruct",
   });
   const { data: session } = useSession();
 
@@ -75,7 +75,7 @@ function ChatInput({ chatId }: Props) {
 
     const notification = toast.loading("ChatGPT is thinking...");
 
-    await fetch("/api/askQuestion", {
+    await fetch("/api/AskQuestion", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
